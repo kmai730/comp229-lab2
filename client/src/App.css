@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f5f7f4;
+  color: #14212b;
+  font: 17px/1.6 Inter, system-ui, sans-serif;
+}
+
+h1,
+h2 {
+  font-family: Lato, Georgia, serif;
+  line-height: 1.15;
+  margin: 0 0 0.6em;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+@media (min-width: 640px) {
+  h1 {
+    font-size: 5vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  h1 {
+    font-size: 3.2rem;
+  }
+}
+
+h2 {
+  font-size: 1.35rem;
+}
+
+a {
+  color: #0f766e;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 5vw;
+  border-bottom: 1px solid #d5ddd9;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: Lato, serif;
+  font-weight: 800;
+  color: #14212b;
+  text-decoration: none;
+}
+
+.navbar nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.navbar nav a {
+  padding: 6px 12px;
+  border-radius: 6px;
+  color: #14212b;
+  text-decoration: none;
+}
+
+.navbar nav a.active {
+  background: #0f766e;
+  color: #f5f7f4;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 56px 5vw;
+}
+
+.hero h1 {
+  max-width: 18ch;
+  font-size: 2.2rem;
+}
+
+@media (min-width: 600px) {
+  .hero h1 {
+    font-size: 6vw;
+  }
+}
+
+@media (min-width: 1066px) {
+  .hero h1 {
+    font-size: 4rem;
+  }
+}
+
+.lead {
+  font-size: 1.2rem;
+  max-width: 55ch;
+  color: #51606b;
+}
+
+.mission {
+  margin: 28px 0;
+  padding-left: 18px;
+  border-left: 4px solid #0f766e;
+  max-width: 55ch;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 11px 22px;
+  border-radius: 8px;
+  border: 2px solid #0f766e;
+  background: #0f766e;
+  color: #f5f7f4;
+  font: 600 1rem Inter, sans-serif;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.btn.ghost {
+  background: transparent;
+  color: #0f766e;
+}
+
+.btn:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #0f766e;
+  outline-offset: 2px;
+}
+
+.notice {
+  background: #0f766e;
+  color: #f5f7f4;
+  padding: 10px 16px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.about > :first-child {
+  flex: 0 0 280px;
+  max-width: 280px;
+}
+
+.about > :last-child {
+  flex: 1;
+  min-width: 280px;
+}
+
+.portrait {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.card {
+  flex: 1 1 260px;
+  border: 1px solid #d5ddd9;
+  border-radius: 12px;
+  padding: 20px;
+  background: #f0f2ef;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.meta {
+  color: #51606b;
+  font-size: 0.95rem;
+}
+
+.swatch {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font: 800 1.6rem Lato, serif;
+  margin-bottom: 12px;
+}
+
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.contact > * {
+  flex: 1 1 280px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 14px;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px;
+  border: 1px solid #d5ddd9;
+  border-radius: 6px;
+  background: #f5f7f4;
+  color: #14212b;
+  font: inherit;
+}
+
+.footer {
+  text-align: center;
+  padding: 24px;
+  color: #51606b;
+  border-top: 1px solid #d5ddd9;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #101a1f;
+    color: #e8efec;
+  }
+
+  a,
+  .btn.ghost {
+    color: #4fd1c0;
+  }
+
+  .navbar {
+    border-bottom-color: #26363d;
+  }
+
+  .brand,
+  .navbar nav a {
+    color: #e8efec;
+  }
+
+  .navbar nav a.active {
+    background: #4fd1c0;
+    color: #101a1f;
+  }
+
+  .lead,
+  .meta,
+  .footer {
+    color: #9bb0b0;
+  }
+
+  .mission {
+    border-left-color: #4fd1c0;
+  }
+
+  .btn {
+    border-color: #4fd1c0;
+    background: #4fd1c0;
+    color: #101a1f;
+  }
+
+  .btn:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible {
+    outline-color: #4fd1c0;
+  }
+
+  .notice {
+    background: #4fd1c0;
+    color: #101a1f;
+  }
+
+  .card {
+    border-color: #26363d;
+    background: #212b30;
+  }
+
+  input,
+  textarea {
+    border-color: #26363d;
+    background: #101a1f;
+    color: #e8efec;
+  }
+
+  .footer {
+    border-top-color: #26363d;
+  }
+}
